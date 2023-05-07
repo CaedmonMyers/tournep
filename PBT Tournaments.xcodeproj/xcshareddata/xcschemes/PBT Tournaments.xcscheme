@@ -28,6 +28,30 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B92799DC2A07297D00573AB2"
+               BuildableName = "PBT TournamentsUITests.xctest"
+               BlueprintName = "PBT TournamentsUITests"
+               ReferencedContainer = "container:PBT Tournaments.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B92799EB2A072C2300573AB2"
+               BuildableName = "PBT TournamentsTests.xctest"
+               BlueprintName = "PBT TournamentsTests"
+               ReferencedContainer = "container:PBT Tournaments.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"

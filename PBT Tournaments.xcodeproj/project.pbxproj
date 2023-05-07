@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B927275B2A04E00A00DD7F06 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B927275A2A04E00A00DD7F06 /* WebView.swift */; };
 		B927275D2A053C7B00DD7F06 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B927275C2A053C7B00DD7F06 /* Placeholder.swift */; };
+		B92799EF2A072C2300573AB2 /* PBT_TournamentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92799EE2A072C2300573AB2 /* PBT_TournamentsTests.swift */; };
 		B942119A2A04409F009ADF7E /* HexColorsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94211992A04409F009ADF7E /* HexColorsList.swift */; };
 		B9B231A329FCC67B00452946 /* PBT_TournamentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B231A229FCC67B00452946 /* PBT_TournamentsApp.swift */; };
 		B9B231A529FCC67B00452946 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B231A429FCC67B00452946 /* ContentView.swift */; };
@@ -31,9 +32,38 @@
 		B9C9B9C82A07073D00ADD821 /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = B9C9B9C72A07073D00ADD821 /* DeviceKit */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		B9CA00312A0722BD00D2256D /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "
+";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		B92799F02A072C2300573AB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9B2319729FCC67B00452946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9B2319E29FCC67B00452946;
+			remoteInfo = "PBT Tournaments";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		B927275A2A04E00A00DD7F06 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		B927275C2A053C7B00DD7F06 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		B92799DF2A07297D00573AB2 /* PBT_TournamentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBT_TournamentsUITests.swift; sourceTree = "<group>"; };
+		B92799E12A07297D00573AB2 /* PBT_TournamentsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBT_TournamentsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B92799EC2A072C2300573AB2 /* PBT TournamentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PBT TournamentsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B92799EE2A072C2300573AB2 /* PBT_TournamentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBT_TournamentsTests.swift; sourceTree = "<group>"; };
 		B94211992A04409F009ADF7E /* HexColorsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColorsList.swift; sourceTree = "<group>"; };
 		B9B2319F29FCC67B00452946 /* PBT Tournaments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PBT Tournaments.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B231A229FCC67B00452946 /* PBT_TournamentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBT_TournamentsApp.swift; sourceTree = "<group>"; };
@@ -51,6 +81,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B92799E92A072C2300573AB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B9B2319C29FCC67B00452946 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,10 +105,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B92799DE2A07297D00573AB2 /* PBT TournamentsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B92799DF2A07297D00573AB2 /* PBT_TournamentsUITests.swift */,
+				B92799E12A07297D00573AB2 /* PBT_TournamentsUITestsLaunchTests.swift */,
+			);
+			path = "PBT TournamentsUITests";
+			sourceTree = "<group>";
+		};
+		B92799ED2A072C2300573AB2 /* PBT TournamentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B92799EE2A072C2300573AB2 /* PBT_TournamentsTests.swift */,
+			);
+			path = "PBT TournamentsTests";
+			sourceTree = "<group>";
+		};
 		B9B2319629FCC67B00452946 = {
 			isa = PBXGroup;
 			children = (
 				B9B231A129FCC67B00452946 /* PBT Tournaments */,
+				B92799DE2A07297D00573AB2 /* PBT TournamentsUITests */,
+				B92799ED2A072C2300573AB2 /* PBT TournamentsTests */,
 				B9B231A029FCC67B00452946 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				B9B2319F29FCC67B00452946 /* PBT Tournaments.app */,
+				B92799EC2A072C2300573AB2 /* PBT TournamentsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +174,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B92799EB2A072C2300573AB2 /* PBT TournamentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B92799F22A072C2300573AB2 /* Build configuration list for PBXNativeTarget "PBT TournamentsTests" */;
+			buildPhases = (
+				B92799E82A072C2300573AB2 /* Sources */,
+				B92799E92A072C2300573AB2 /* Frameworks */,
+				B92799EA2A072C2300573AB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B92799F12A072C2300573AB2 /* PBXTargetDependency */,
+			);
+			name = "PBT TournamentsTests";
+			productName = "PBT TournamentsTests";
+			productReference = B92799EC2A072C2300573AB2 /* PBT TournamentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B9B2319E29FCC67B00452946 /* PBT Tournaments */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9B231AD29FCC67C00452946 /* Build configuration list for PBXNativeTarget "PBT Tournaments" */;
@@ -126,6 +201,7 @@
 				B9B2319D29FCC67B00452946 /* Resources */,
 			);
 			buildRules = (
+				B9CA00312A0722BD00D2256D /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -153,6 +229,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					B92799EB2A072C2300573AB2 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = B9B2319E29FCC67B00452946;
+					};
 					B9B2319E29FCC67B00452946 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -176,11 +256,19 @@
 			projectRoot = "";
 			targets = (
 				B9B2319E29FCC67B00452946 /* PBT Tournaments */,
+				B92799EB2A072C2300573AB2 /* PBT TournamentsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B92799EA2A072C2300573AB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B9B2319D29FCC67B00452946 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,6 +282,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B92799E82A072C2300573AB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B92799EF2A072C2300573AB2 /* PBT_TournamentsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B9B2319B29FCC67B00452946 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,7 +311,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B92799F12A072C2300573AB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9B2319E29FCC67B00452946 /* PBT Tournaments */;
+			targetProxy = B92799F02A072C2300573AB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		B92799F32A072C2300573AB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47J6H2LHDD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doorhingeapps.PBT-TournamentsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PBT Tournaments.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PBT Tournaments";
+			};
+			name = Debug;
+		};
+		B92799F42A072C2300573AB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47J6H2LHDD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doorhingeapps.PBT-TournamentsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PBT Tournaments.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PBT Tournaments";
+			};
+			name = Release;
+		};
 		B9B231AB29FCC67C00452946 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -395,6 +535,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B92799F22A072C2300573AB2 /* Build configuration list for PBXNativeTarget "PBT TournamentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B92799F32A072C2300573AB2 /* Debug */,
+				B92799F42A072C2300573AB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B9B2319A29FCC67B00452946 /* Build configuration list for PBXProject "PBT Tournaments" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
